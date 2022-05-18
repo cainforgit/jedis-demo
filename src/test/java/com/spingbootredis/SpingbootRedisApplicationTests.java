@@ -18,7 +18,7 @@ class SpingbootRedisApplicationTests {
     void contextLoads() {
         redisTemplate.opsForValue().set("name","老李");
         Object name = redisTemplate.opsForValue().get("name");
-        System.out.println(name);
+        System.out.println(""+name);
 
     }
 
